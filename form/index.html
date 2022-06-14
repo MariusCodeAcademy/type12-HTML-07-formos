@@ -17,6 +17,7 @@
       <h1>Lets Form</h1>
 
       <form class="user-form" method="get">
+        <input type="month">
         <!-- Tekstinis ivesties laukas -->
         <label for="name">Your name*</label>
         <input type="text" name="name" id="name" placeholder="Enter your name" required>
@@ -35,7 +36,7 @@
 
         <!-- taip irgi galima  -->
         <!-- <input type="submit" value="Send"> -->
-        <button class="submit-btn" type="submit">Send</button>
+        <button class="submit-btn" type="submit">Send<strong>Info</strong></button>
       </form>
     </div>
   </div>
@@ -65,6 +66,17 @@
           <br>
           <label for="shop">Atsiimti parduotuveje</label>
           <input type="radio" id="shop" value="shop-delivery" name="siuntimas">
+        </fieldset>
+
+        <fieldset>
+          <legend>Pasirinikite miesta</legend>
+          <select name="town">
+            <option disabled selected value="">Pasirinkite miesta</option>
+            <option value="vln">Vilnius</option>
+            <option value="kns">Kaunas</option>
+            <option value="klp">Klaipeda</option>
+            <option value="siau">Siauliai</option>
+          </select>
         </fieldset>
 
         <button class="submit-btn" type="submit">create</button>
