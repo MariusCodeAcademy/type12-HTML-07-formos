@@ -1,0 +1,14 @@
+/* Section one */
+.part-one {
+  background-color: #cdcdcd;
+  padding: 3% 0 4%;
+}
+
+label {
+  display: block;
+}
+
+.submit-btn {
+  display: block;
+  margin-top: 20px;
+}
