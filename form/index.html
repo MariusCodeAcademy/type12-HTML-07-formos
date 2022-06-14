@@ -46,11 +46,26 @@
 
       <form>
         <input type="text" placeholder="name">
-        <br>
-        <input type="checkbox" name="green" id="col1">
-        <label for="col1">Green</label>
-        <input type="checkbox" name="blue" id="col2">
-        <label for="col2">Blue</label>
+
+        <fieldset>
+          <legend>Pick a color</legend>
+          <input type="checkbox" name="green" id="col1">
+          <label for="col1">Green</label>
+          <input type="checkbox" name="blue" id="col2">
+          <label for="col2">Blue</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pasirinkte pristatymo buda</legend>
+          <label for="lp">Lietuvos pastas</label>
+          <input type="radio" id="lp" value="lp" name="siuntimas">
+          <br>
+          <label for="cur">Kurjeris</label>
+          <input type="radio" id="cur" value="currier" name="siuntimas">
+          <br>
+          <label for="shop">Atsiimti parduotuveje</label>
+          <input type="radio" id="shop" value="shop-delivery" name="siuntimas">
+        </fieldset>
 
         <button class="submit-btn" type="submit">create</button>
       </form>

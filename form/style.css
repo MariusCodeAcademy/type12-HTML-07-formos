@@ -22,3 +22,7 @@ input {
 .part-two {
   padding: 3% 0 4%;
 }
+
+.part-two form {
+  max-width: 300px;
+}
