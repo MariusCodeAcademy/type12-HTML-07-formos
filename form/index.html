@@ -16,14 +16,45 @@
     <div class="container">
       <h1>Lets Form</h1>
 
-      <form>
-        <label for="name">Your name</label>
-        <input id="name" type="text" placeholder="Enter your name">
+      <form class="user-form" method="get">
+        <!-- Tekstinis ivesties laukas -->
+        <label for="name">Your name*</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+        <label for="psw">Password</label>
+        <input type="password" name="psw" id="psw" placeholder="Your password" minlength="5">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Your age" step="1" min="10" max="150">
+
+        <label for="body">Message</label>
+        <textarea name="body" id="body" cols="30" rows="4" placeholder="Your message"></textarea>
+
         <!-- taip irgi galima  -->
         <!-- <input type="submit" value="Send"> -->
-
         <button class="submit-btn" type="submit">Send</button>
       </form>
+    </div>
+  </div>
+
+  <div class="part-two">
+    <div class="container">
+      <h2>Other form</h2>
+
+      <form>
+        <input type="text" placeholder="name">
+        <br>
+        <input type="checkbox" name="green" id="col1">
+        <label for="col1">Green</label>
+        <input type="checkbox" name="blue" id="col2">
+        <label for="col2">Blue</label>
+
+        <button class="submit-btn" type="submit">create</button>
+      </form>
+
     </div>
   </div>
 

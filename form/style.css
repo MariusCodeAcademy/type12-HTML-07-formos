@@ -4,11 +4,21 @@
   padding: 3% 0 4%;
 }
 
-label {
+.user-form label {
   display: block;
+}
+
+input {
+  margin-bottom: 0.5em;
 }
 
 .submit-btn {
   display: block;
   margin-top: 20px;
+}
+
+/* Part two  */
+
+.part-two {
+  padding: 3% 0 4%;
 }
